@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Sync App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body class="bg-gray-900 text-gray-100 flex flex-col items-center justify-center min-h-screen">
+    <div class="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-6">
+        <h1 class="text-2xl font-semibold mb-4">Spotify Sync</h1>
+        <button id="login" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4">
+            Login with Spotify
+        </button>
+        <div id="track-info" class="mb-4">
+            <img id="album-art" src="" alt="Album Art" class="w-full h-48 rounded-md mb-2">
+            <div id="track-name" class="text-lg font-semibold">Not playing</div>
+            <div id="track-artists" class="text-gray-400">—</div>
+        </div>
+        <div class="flex space-x-4">
+            <button id="prev" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded">Prev</button>
+            <button id="play" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded">Play</button>
+            <button id="pause" class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded hidden">Pause</button>
+            <button id="next" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded">Next</button>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
